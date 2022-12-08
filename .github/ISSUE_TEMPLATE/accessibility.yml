@@ -79,13 +79,13 @@ body:
       options:
         - ARIA roles
         - Contrast ratio
-        - Focus
+        - Focus management
         - Forced colors (high contrast mode)
         - Keyboard focus indicator
+        - Keyboard navigation
         - Live region
         - Send box
         - Suggested action
-        - Tab ordering
         - Transcript navigation
         - Others or unrelated
     validations:
