@@ -18,8 +18,8 @@ body:
       description: If yes, please verify if this issue repro on [Adaptive Cards Designer](https://adaptivecards.io/designer/). If it repro on their designer, please [file an issue to their repository](https://github.com/microsoft/AdaptiveCards/issues/new/choose).
       options:
         - ""
-        - Yes, this is an Adaptive Card issue, however it only repro on Web Chat.
-        - "No"
+        - Yes, this is related to Adaptive Card. However, it does not repro on Adaptive Cards Designer.
+        - "No."
     validations:
       required: true
   - type: textarea
@@ -69,7 +69,7 @@ body:
 
         The latest version number of Web Chat can be found in the [Releases section](https://github.com/microsoft/BotFramework-WebChat/releases/latest).
 
-        If you are not using latest version of Web Chat, please upgrade to the latest version as the issue may have been resolved.
+        If you are not using latest version of Web Chat, please upgrade to the latest version as the issue may had resolved.
       options:
         - Latest production
         - Development build
@@ -134,7 +134,7 @@ body:
     id: mas-reference
     attributes:
       label: MAS reference
-      description: For internal use. Please link to MAS reference if any.
+      description: For internal use only. Please link to MAS documentation, if any.
       placeholder: https://microsoft.sharepoint.com/:w:/s/accessibility/
   - type: input
     id: wcag-reference
