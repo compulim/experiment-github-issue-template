@@ -83,13 +83,16 @@ body:
       multiple: true
       options:
         - ARIA roles
+        - Contrast ratio
+        - Focus
+        - Forced colors (high contrast mode)
         - Keyboard focus indicator
         - Live region
         - Send box
         - Suggested action
-        - Tab order
+        - Tab ordering
         - Transcript navigation
-        - Other/unrelated
+        - Others or unrelated
     validations:
       required: true
   - type: textarea
@@ -120,7 +123,7 @@ body:
     id: screenshots
     attributes:
       label: Do you have any screenshots or recordings to repro the issue?
-      description: Be sure to remove or obscure personally identifiable information from your code and screenshots
+      description: Be sure to remove or obscure personally identifiable information from your code and screenshots.
   - type: textarea
     id: dom-element
     attributes:
