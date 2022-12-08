@@ -1,5 +1,5 @@
 name: Data point feature request
-description: Suggest a telemetry data point
+description: Suggest adding data points for telemetry purpose
 labels:
   - area-telemetry
   - feature-request
@@ -11,7 +11,7 @@ body:
       value: |
         This template is a feature request form for adding data points to Web Chat. Web Chat do not collect any data. As a web developer, you should connect your data collector to collect emitted data points from Web Chat.
 
-        ## Please read before submitting a feature request
+        ### Please read before submitting a feature request
 
         Web Chat is a client-side JavaScript library and emit telemetry data. However, *we do not collect data*. It is up to web developers to [connect their data collector to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect data for their own use. We do not govern and do not know how these data are being used.
 
