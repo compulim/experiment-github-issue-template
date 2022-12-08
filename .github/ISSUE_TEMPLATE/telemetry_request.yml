@@ -40,7 +40,7 @@ body:
   - type: textarea
     id: sample-telemetrics
     attributes:
-      label: How these data points being used in analysis?
+      label: How these data points will be used in analysis?
       value: |
         ### Outgoing message reliability
 
