@@ -1,0 +1,47 @@
+name: Telemetry request
+description: Suggest a telemetry data point
+labels:
+  - area-telemetry
+  - feature-request
+  - customer-reported
+  - Bot Services
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Web Chat emit telemetry. However, we *do not collect them* and there is no default collector. It is up to web developers to connect their telemetry collection system to Web Chat and collect telemetry for their own use. We do not govern and do not know how these data are being used.
+        
+        Web developers can always modify our source code and collect what they want. Regardless whether a telemetry data point is added to Web Chat or not, data are always available to web developers.
+
+        This feature request is a way to make telemetry data more convenient and transparent to everyone.
+  - type: textarea
+    id: data-point
+    attributes:
+      label: What new data points do you want to add?
+      placeholder: |
+        - When a message is being sent, emit:
+          - Begin of send message
+          - Send status turned from "sending" to "sent", with duration
+          - Send status turned from "sending" to "send failed", with duration
+    validations:
+      required: true
+  - type: textarea
+    id: sample-scenarios
+    attributes:
+      label: How will this new data point help you to understand?
+      placeholder: This new data point will give us ability to measure "outgoing message reliability".
+    validations:
+      required: true
+  - type: textarea
+    id: sample-telemetrics
+    attributes:
+      label: Can you give us a sample usage of the
+      placeholder: |
+        $$ Outgoing message reliability = {number of "send status changed from sending to sent" \over number of "begin of send message" \times 100% $$
+    validations:
+      required: true
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add any other context about the problem here.
