@@ -19,8 +19,8 @@ body:
       options:
         - label: Yes, this is an Adaptive Card issue, however it only repro on Web Chat.
         - label: No
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: impact
     attributes:
