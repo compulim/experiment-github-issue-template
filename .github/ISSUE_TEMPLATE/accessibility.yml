@@ -43,6 +43,7 @@ body:
     attributes:
       label: What is the public URL for the website?
       description: If the bot is not intended for public use, please leave this blank. It will be helpful if we can test the bot to understand the issue.
+      placeholder: "https://"
   - type: dropdown
     attributes:
       label: Are there any code-based customization done to Web Chat?
