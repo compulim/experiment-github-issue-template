@@ -128,8 +128,8 @@ body:
   - type: textarea
     id: dom-element
     attributes:
-      label: Did you find any DOM elements that might have caused the issue? If yes, please paste a screenshot or its code below.
-      description: Attaching screenshots could greatly reduce our time on investigating the issue.
+      label: Did you find any DOM elements that might have caused the issue?
+      description: If yes, please paste a screenshot or its code below. Knowing the suspected DOM element could greatly reduce our time on investigating and resolving the issue.
   - type: input
     id: mas-reference
     attributes:
