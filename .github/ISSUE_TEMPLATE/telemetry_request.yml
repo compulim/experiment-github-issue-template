@@ -11,7 +11,7 @@ body:
       value: |
         ## Please read
 
-        Web Chat emit telemetry. However, we *do not collect them* and there is no default collector. It is up to web developers to connect their telemetry collection system to Web Chat and collect telemetry for their own use. We do not govern and do not know how these data are being used.
+        Web Chat emit telemetry. However, we *do not collect them* and there is no default collector. It is up to web developers to [connect their telemetry collection system to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect telemetry for their own use. We do not govern and do not know how these data are being used.
         
         Web developers can always modify our source code and collect what they want, regardless whether a telemetry data point is added to Web Chat or not.
 
