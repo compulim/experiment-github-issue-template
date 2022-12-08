@@ -11,7 +11,7 @@ body:
       value: |
         ## Please read before submitting a feature request
 
-        Web Chat is a client-side JavaScript library and emit telemetry data. However, we *do not collect data*. It is up to web developers to [connect their data collector to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect data for their own use. We do not govern and do not know how these data are being used.
+        Web Chat is a client-side JavaScript library and emit telemetry data. However, *we do not collect data*. It is up to web developers to [connect their data collector to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect data for their own use. We do not govern and do not know how these data are being used.
 
         Ultimately, web developers can always fork Web Chat source code and collect any data in their own forked version, regardless whether data points are in the official source code or not.
 
