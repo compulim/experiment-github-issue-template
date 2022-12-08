@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This template is a feature request form for suggesting new data points to be emitted in Web Chat. Web Chat do not collect any data. As a web developer, you should connect your data collector to collect emitted data points from Web Chat.
+        This template is a feature request form for suggesting new data points to be emitted by Web Chat. *Web Chat do not collect any data*. As a web developer, you should connect your data collector to collect emitted data points from Web Chat.
 
         ### Please read before submitting a feature request
 
@@ -24,6 +24,7 @@ body:
     id: sample-scenarios
     attributes:
       label: What do you want to analyze and understand?
+      description: This will help us designing data points that fit your analytical needs.
       value: |
         - Outgoing message reliability
         - How long does it take to successfully send a message in average
@@ -32,7 +33,7 @@ body:
   - type: textarea
     id: data-point
     attributes:
-      label: What new data points do you want to add?
+      label: What new data points do you think we should add?
       value: |
         When a message is being sent, emit:
         - Begin to send a message
@@ -42,7 +43,7 @@ body:
   - type: textarea
     id: sample-telemetrics
     attributes:
-      label: How these data points will be used in analysis?
+      label: How these data points will be used in your analysis?
       value: |
         ### Outgoing message reliability
 
