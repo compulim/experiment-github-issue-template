@@ -33,7 +33,7 @@ body:
       label: What new data points do you want to add?
       value: |
         When a message is being sent, emit:
-          - Begin of sending a message
+          - Begin to send a message
           - Send status changes from "sending" to "sent", with duration
           - Send status changes from "sending" to "send failed", with duration
     validations:
@@ -43,7 +43,7 @@ body:
     attributes:
       label: Can you give us the sample usages of the data points?
       value: |
-        $$ outgoing\ message\ reliability = {number\ of\ send\ status\ changed\ from\ sending\ to\ sent \over number\ of\ begin\ of\ send\ message} \times 100\\% $$
+        $$ outgoing\ message\ reliability = {number\ of\ send\ status\ changed\ from\ sending\ to\ sent \over number\ of\ begin\ to\ send\ a\ message} \times 100\\% $$
     validations:
       required: true
   - type: textarea
