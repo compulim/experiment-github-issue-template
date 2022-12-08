@@ -19,7 +19,7 @@ body:
 
         Some services and systems at Microsoft use Web Chat, including, but not limited to, Azure Bot Services, Azure Communication Services, Bot Framework, Dynamics 365 Omnichannel, and Power Virtual Agents. They may collect data by connecting their data collector to Web Chat, and/or collect data on service-side. You should always read Privacy Policy to understand how data are collected.
 
-        This feature request template is a best effort to make telemetry more accessible and transparent to everyone. However, web developers may not use this template to disclose what they would collect.
+        This feature request template is a best effort to make telemetry more accessible and transparent. However, web developers may not use this template to disclose what they would collect and why they are collecting.
   - type: textarea
     id: sample-scenarios
     attributes:
