@@ -17,8 +17,8 @@ body:
       label: Is it an issue related to Adaptive Cards?
       description: If yes, please verify if this issue repro on [Adaptive Cards Designer](https://adaptivecards.io/designer/). If it repro on their designer, please [file an issue to their repository](https://github.com/microsoft/AdaptiveCards/issues/new/choose).
       options:
-        - label: Yes, this is an Adaptive Card issue, however it only repro on Web Chat.
-        - label: No
+        - Yes, this is an Adaptive Card issue, however it only repro on Web Chat.
+        - No
     validations:
       required: true
   - type: textarea
@@ -51,8 +51,8 @@ body:
 
         Code-based customization might affect how Web Chat works with screen readers. Please verify if this issue continue to repro without any code-based customization.
       options:
-        - label: Yes, however, this also repro when customizations are removed.
-        - label: No, I am using Web Chat without any customizations.
+        - Yes, however, this also repro when customizations are removed.
+        - No, I am using Web Chat without any customizations.
     validations:
       required: true
   - type: dropdown
