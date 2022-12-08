@@ -12,7 +12,7 @@ body:
         > Please view our [accessibility guide](https://github.com/microsoft/BotFramework-WebChat/tree/main/docs/ACCESSIBILITY.md) before filing a new issue.
         >
         > Be sure to remove or obscure personally identifiable information from your code and screenshots.
-  - type: checkboxes
+  - type: dropdown
     attributes:
       label: Is it an issue related to Adaptive Cards?
       description: If yes, please verify if this issue repro on [Adaptive Cards Designer](https://adaptivecards.io/designer/). If it repro on their designer, please [file an issue to their repository](https://github.com/microsoft/AdaptiveCards/issues/new/choose).
@@ -122,7 +122,7 @@ body:
     attributes:
       label: MAS reference
       description: For internal use. Please link to MAS reference if any.
-    value: https://microsoft.sharepoint.com/:w:/s/accessibility/
+      value: https://microsoft.sharepoint.com/:w:/s/accessibility/
   - type: textarea
     id: wcag-reference
     attributes:
