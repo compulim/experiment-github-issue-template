@@ -109,7 +109,7 @@ body:
   - type: textarea
     id: expected-result
     attributes:
-      label: What is the expected behavior?
+      label: What should be the expected behavior?
       description: Give a clear and concise description of what you expect to happen.
     validations:
       required: true
@@ -128,7 +128,7 @@ body:
   - type: textarea
     id: dom-element
     attributes:
-      label: Do you have any screenshots showing the suspected DOM element?
+      label: Did you find any DOM elements that might have caused the issue? If yes, please paste a screenshot or its code below.
       description: Attaching screenshots could greatly reduce our time on investigating the issue.
   - type: input
     id: mas-reference
