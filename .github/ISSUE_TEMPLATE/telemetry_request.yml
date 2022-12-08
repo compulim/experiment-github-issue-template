@@ -17,7 +17,7 @@ body:
 
         Some services and systems at Microsoft use Web Chat, including, but not limited to, Azure Bot Services. They may collect data by connecting their data collector to Web Chat, and/or collect data on service-side. You should always read Privacy Policy to understand how data are collected.
 
-        This feature request template is a best effort to make telemetry data more accessible and transparent to everyone. However, web developers may not use feature request to expose what they would collect.
+        This feature request template is a best effort to make telemetry more accessible and transparent to everyone. However, web developers may not use feature request to expose what they would collect.
   - type: textarea
     id: sample-scenarios
     attributes:
@@ -35,7 +35,6 @@ body:
         When a message is being sent, emit:
           - Begin to send a message
           - Send status changes from "sending" to "sent", with duration
-          - Send status changes from "sending" to "send failed", with duration
     validations:
       required: true
   - type: textarea
@@ -43,7 +42,15 @@ body:
     attributes:
       label: How these data points being used in analysis?
       value: |
+        ### Outgoing message reliability
+
         $$ outgoing\ message\ reliability = {number\ of\ send\ status\ changed\ from\ sending\ to\ sent \over number\ of\ begin\ to\ send\ a\ message} \times 100\\% $$
+
+        ### Average time to send a message
+
+        $$ average\ time\ to\ send\ a\ message = \frac{\displaystyle\sum_{i=1}^n t_i}{n} $$
+
+        $$ t_x = time\ to\ send\ a\ message $$
     validations:
       required: true
   - type: textarea
