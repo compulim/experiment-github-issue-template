@@ -167,7 +167,10 @@ body:
     id: adaptive-card-json
     attributes:
       label: Adaptive Card JSON
-      description: If this issue is related to Adaptive Cards, please paste the JSON of the card below.
+      description: |
+        If this issue is related to Adaptive Cards, please paste the JSON of the card below.
+
+        Please verify if this issue repro on [Adaptive Cards Designer](https://adaptivecards.io/designer/). If it repro on their designer, please [file an issue to their repository](https://github.com/microsoft/AdaptiveCards/issues/new/choose).
       placeholder: |
         {
           "type": "AdaptiveCard",
