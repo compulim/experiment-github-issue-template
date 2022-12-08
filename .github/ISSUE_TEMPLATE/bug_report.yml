@@ -104,7 +104,6 @@ body:
         - "Attachment: Adaptive Card"
         - "Attachment: OAuth card"
         - "Attachment: Other rich cards"
-        - Chat adapter
         - Chat history
         - "Customization: Branding"
         - "Customization: Others"
