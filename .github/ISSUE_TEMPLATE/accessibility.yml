@@ -1,7 +1,7 @@
 name: Accessibility issue
 description: Create a report to help us improve the accessibility experience.
 labels:
-  - aria-accessibility
+  - area-accessibility
   - bug
   - customer-reported
   - Bot Services
