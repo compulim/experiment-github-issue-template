@@ -41,7 +41,7 @@ body:
   - type: textarea
     id: sample-telemetrics
     attributes:
-      label: How are data points being used in analysis?
+      label: How these data points being used in analysis?
       value: |
         $$ outgoing\ message\ reliability = {number\ of\ send\ status\ changed\ from\ sending\ to\ sent \over number\ of\ begin\ to\ send\ a\ message} \times 100\\% $$
     validations:
