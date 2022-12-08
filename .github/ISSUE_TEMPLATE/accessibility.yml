@@ -66,6 +66,8 @@ body:
 
         `[].map.call(document.head.querySelectorAll('meta[name^="botframework-"]'), function (meta) { return meta.outerHTML; }).join('\n')`
 
+        The latest version number of Web Chat can be found in the [Releases section](https://github.com/microsoft/BotFramework-WebChat/releases/latest).
+
         If you are not using latest version of Web Chat, please upgrade to the latest version as the issue may have been resolved.
       options:
         - Latest production
