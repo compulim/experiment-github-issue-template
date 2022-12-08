@@ -21,7 +21,6 @@ body:
     attributes:
       label: What do you want to understand with this new data points?
       value: |
-        This new data point will give us ability to measure:
         - Outgoing message reliability
         - In average, how long it takes to successfully send a message
     validations:
