@@ -24,7 +24,7 @@ body:
       label: What do you want to analyze and understand?
       value: |
         - Outgoing message reliability
-        - How long it takes to successfully send a message in average
+        - How long does it take to successfully send a message in average
     validations:
       required: true
   - type: textarea
