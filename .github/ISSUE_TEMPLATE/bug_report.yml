@@ -13,13 +13,13 @@ body:
         > [GitHub issues](https://github.com/microsoft/botframework-webchat/issues) should be used for bugs and feature requests. See the [Technical Support Guide](https://github.com/microsoft/BotFramework-WebChat/tree/main/docs/TECHNICAL_SUPPORT_GUIDE.md) to get support related to Bot Framework and Web Chat.
         >
         > Be sure to remove or obscure personally identifiable information from your code and screenshots.
-  - type: checkboxes
+  - type: dropdown
     attributes:
       label: Is it an issue related to Adaptive Cards?
       description: If yes, please verify if this issue repro on [Adaptive Cards Designer](https://adaptivecards.io/designer/). If it repro on their designer, please [file an issue to their repository](https://github.com/microsoft/AdaptiveCards/issues/new/choose).
       options:
-        - label: Yes, this is an Adaptive Card issue but it only repro on Web Chat.
-        - label: "No"
+        - Yes, this is an Adaptive Card issue, however it only repro on Web Chat.
+        - "No"
     validations:
       required: true
   - type: dropdown
@@ -166,14 +166,13 @@ body:
       label: Adaptive Card JSON
       description: If this issue is related to Adaptive Cards, please paste the JSON of the card below.
       placeholder: |
-        ```json
         {
           "type": "AdaptiveCard",
           "body": []
           "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
           "version": "1.5"
         }
-        ```
+      render: json
   - type: textarea
     id: additional-context
     attributes:
