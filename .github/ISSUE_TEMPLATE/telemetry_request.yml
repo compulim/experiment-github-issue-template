@@ -9,13 +9,17 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Please read
+        ## Please read before submitting a feature request
 
-        Web Chat emit telemetry. However, we *do not collect them* and there is no default collector. It is up to web developers to [connect their telemetry collection system to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect telemetry for their own use. We do not govern and do not know how these data are being used.
-        
-        Web developers can always modify our source code and collect what they want, regardless whether a telemetry data point is added to Web Chat or not.
+        Web Chat is a client-side JavaScript library and emit telemetry. However, we *do not collect them* and no collectors are connected by default.
+        It is up to web developers to [connect their telemetry collection system to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect telemetry for their own use.
+        We do not govern and do not know how these data are being used.
 
-        This feature request is to make telemetry data more accessible and transparent to everyone.
+        Web developers can always modify our source code and collect everything they want, regardless whether telemetry data points are added to Web Chat or not.
+
+        Some services and systems at Microsoft use Web Chat. They may collect telemetry data by connecting telemetry collector to Web Chat. This does not implies Web Chat collect data.
+
+        This feature request is to make telemetry data more accessible and transparent to everyone. However, web developers may not use feature request and may not tell us what data they collect.
   - type: textarea
     id: sample-scenarios
     attributes:
@@ -48,4 +52,4 @@ body:
     id: additional-context
     attributes:
       label: Additional context
-      description: Add any other context about the problem here.
+      description: Add any other context about the feature request here.
