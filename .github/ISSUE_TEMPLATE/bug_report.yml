@@ -130,7 +130,7 @@ body:
     attributes:
       label: Do you see any errors in console log?
       description: If errors are logged to the console, please copy them here.
-    render: js
+      render: js
   - type: input
     id: url
     attributes:
