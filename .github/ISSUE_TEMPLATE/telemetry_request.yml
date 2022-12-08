@@ -44,7 +44,7 @@ body:
       value: |
         ### Outgoing message reliability
 
-        $$ outgoing\ message\ reliability = {number\ of\ send\ status\ changed\ from\ sending\ to\ sent \over number\ of\ begin\ to\ send\ a\ message} \times 100\\% $$
+        $$ outgoing\ message\ reliability = \frac{n_{sent}}{n_{begin}} \times 100\\% $$
 
         ### Average time to send a message
 
