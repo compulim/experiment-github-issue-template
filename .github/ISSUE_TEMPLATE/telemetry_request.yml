@@ -15,7 +15,7 @@ body:
         
         Web developers can always modify our source code and collect what they want, regardless whether a telemetry data point is added to Web Chat or not.
 
-        This feature request is a way to make telemetry data more convenient and transparent to everyone.
+        This feature request is to make telemetry data more accessible and transparent to everyone.
   - type: textarea
     id: data-point
     attributes:
