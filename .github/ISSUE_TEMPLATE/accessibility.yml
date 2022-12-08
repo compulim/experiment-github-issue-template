@@ -29,7 +29,7 @@ body:
   - type: dropdown
     id: test-environment
     attributes:
-      label: Which browsers and screen readers do the issue happened?
+      label: What browsers and screen readers do this issue affect?
       description: Please make sure the issue continued to repro on latest version of the browser and screen reader. If you choose "Others", please provide us information in the additional context section.
       multiple: true
       options:
