@@ -53,7 +53,7 @@ body:
         Code-based customization might affect how Web Chat works with screen readers. Please verify if this issue continue to repro without any code-based customization.
       options:
         - Yes, however, this also repro when customizations are removed.
-        - No, I am using Web Chat without any customizations.
+        - No, I am using Web Chat without any customizations except `styleOptions`.
     validations:
       required: true
   - type: dropdown
