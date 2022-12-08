@@ -11,13 +11,13 @@ body:
       value: |
         ## Please read before submitting a feature request
 
-        Web Chat is a client-side JavaScript library and emit telemetry. However, we *do not collect them* and no collectors are connected by default. It is up to web developers to [connect their telemetry collection system to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect telemetry for their own use. We do not govern and do not know how these data are being used.
+        Web Chat is a client-side JavaScript library and emit telemetry data. However, we *do not collect them*. It is up to web developers to [connect their data collector to Web Chat](https://github.com/microsoft/BotFramework-WebChat/tree/master/samples/04.api/k.telemetry-application-insights) and collect data for their own use. We do not govern and do not know how these data are being used.
 
-        Web developers can always modify our source code and collect everything they want, regardless whether telemetry data points are added to Web Chat or not.
+        Ultimately, web developers can always fork Web Chat source code and collect any data in their own forked version, regardless whether data points are added to the official source code of Web Chat or not.
 
-        Some services and systems at Microsoft use Web Chat. They may collect telemetry data by connecting telemetry collector to Web Chat. This does not implies Web Chat collect data.
+        Some services and systems at Microsoft use Web Chat. They may collect data by connecting their data collector to Web Chat. This does not implies Web Chat collect data.
 
-        This feature request is to make telemetry data more accessible and transparent to everyone. However, web developers may not use feature request and may not tell us what data they collect.
+        This feature request template is to make telemetry data more accessible and transparent to everyone. However, web developers may not use feature request to expose what they collected.
   - type: textarea
     id: sample-scenarios
     attributes:
