@@ -19,7 +19,7 @@ body:
       description: If yes, please verify if this issue repro on [Adaptive Cards Designer](https://adaptivecards.io/designer/). If it repro on their designer, please [file an issue to their repository](https://github.com/microsoft/AdaptiveCards/issues/new/choose).
       options:
         - label: Yes, this is an Adaptive Card issue but it only repro on Web Chat.
-        - label: No
+        - label: "No"
       validations:
         required: true
   - type: dropdown
@@ -27,7 +27,7 @@ body:
       label: Is this an accessibility issue?
       description: For accessibility issue, please use [this issue template](https://github.com/microsoft/BotFramework-WebChat/issues/new?template=accessibility.yml).
       options:
-        - label: " "
+        - label: ""
         - label: No
   - type: dropdown
     id: version
