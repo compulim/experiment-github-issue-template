@@ -109,14 +109,14 @@ body:
   - type: textarea
     id: expected-result
     attributes:
-      label: What should be the expected behavior?
+      label: What do you expect?
       description: Give a clear and concise description of what you expect to happen.
     validations:
       required: true
   - type: textarea
     id: actual-result
     attributes:
-      label: What is the actual behavior?
+      label: What actually happened?
       description: Give a clear and concise description of what actually happened.
     validations:
       required: true
