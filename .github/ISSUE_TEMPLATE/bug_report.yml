@@ -129,7 +129,6 @@ body:
     attributes:
       label: Do you see any errors in console log?
       description: If errors are logged to the console, please copy them here.
-    render: ""
   - type: textarea
     id: url
     attributes:
