@@ -34,6 +34,7 @@ body:
       options:
         - "Windows: Edge with Windows Narrator"
         - "Windows: Chrome with NVDA"
+        - "Windows: Chrome/Firefox with JAWS"
         - "macOS: Safari with VoiceOver"
         - "iOS/iPadOS: Safari with VoiceOver"
         - "Android: Chrome with TalkBack"
