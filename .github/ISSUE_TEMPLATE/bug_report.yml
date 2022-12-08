@@ -20,8 +20,8 @@ body:
       options:
         - label: Yes, this is an Adaptive Card issue but it only repro on Web Chat.
         - label: "No"
-      validations:
-        required: true
+    validations:
+      required: true
   - type: dropdown
     attributes:
       label: Is this an accessibility issue?
