@@ -64,7 +64,9 @@ body:
       description: |
         To determine what version of Web Chat you are running, open your browser's development tools, and paste the following line of code into the console.
 
-        `[].map.call(document.head.querySelectorAll('meta[name^="botframework-"]'), function (meta) { return meta.outerHTML; }).join('\n')`
+        ```js
+        [].map.call(document.head.querySelectorAll('meta[name^="botframework-"]'), function (meta) { return meta.outerHTML; }).join('\n')
+        ```
 
         The latest version number of Web Chat can be found in the [Releases section](https://github.com/microsoft/BotFramework-WebChat/releases/latest).
 
