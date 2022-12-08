@@ -27,8 +27,9 @@ body:
       label: Is this an accessibility issue?
       description: For accessibility issue, please use [this issue template](https://github.com/microsoft/BotFramework-WebChat/issues/new?template=accessibility.yml).
       options:
-        - label: ""
         - label: No
+    validations:
+      required: true
   - type: dropdown
     id: version
     attributes:
