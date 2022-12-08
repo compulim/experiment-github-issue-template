@@ -119,8 +119,13 @@ body:
   - type: textarea
     id: screenshots
     attributes:
-      label: Do you have any screenshots or recordings?
+      label: Do you have any screenshots or recordings to repro the issue?
       description: Be sure to remove or obscure personally identifiable information from your code and screenshots
+  - type: textarea
+    id: dom-element
+    attributes:
+      label: Do you have any screenshots showing the suspected DOM element?
+      description: Attaching screenshots could greatly reduce our time on investigating the issue.
   - type: input
     id: mas-reference
     attributes:
@@ -131,13 +136,13 @@ body:
     id: wcag-reference
     attributes:
       label: WCAG reference
-      description: Please link to related criterion from [Understanding WCAG](https://www.w3.org/WAI/WCAG21/Understanding/).
+      description: Please link to related criterion from the [Understanding WCAG](https://www.w3.org/WAI/WCAG21/Understanding/) article.
       placeholder: https://www.w3.org/WAI/WCAG21/Understanding/
   - type: input
     id: wai-aria-reference
     attributes:
       label: WAI-ARIA reference
-      description: For roles, state, and properties issues, please link to their related section from [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria/).
+      description: For roles, state, and properties issues, please link to their related section from the [Accessible Rich Internet Applications (WAI-ARIA)](https://www.w3.org/TR/wai-aria/) article.
       placeholder: https://www.w3.org/TR/wai-aria/
   - type: textarea
     id: adaptive-card-json
