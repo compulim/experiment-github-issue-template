@@ -38,7 +38,7 @@ body:
         - "iOS/iPadOS: Safari with VoiceOver"
         - "Android: Chrome with TalkBack"
         - "Others"
-  - type: textarea
+  - type: input
     id: url
     attributes:
       label: What is the public URL for the website?
@@ -139,14 +139,13 @@ body:
       label: Adaptive Card JSON
       description: If this issue is related to Adaptive Cards, please paste the JSON of the card below.
       placeholder: |
-        ```json
         {
           "type": "AdaptiveCard",
           "body": []
           "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
           "version": "1.5"
         }
-        ```
+      render: json
   - type: textarea
     id: additional-context
     attributes:
