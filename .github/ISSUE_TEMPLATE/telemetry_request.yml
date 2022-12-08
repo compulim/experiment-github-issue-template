@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        This template is a feature request form for adding data points to Web Chat. Web Chat do not collect any data. As a web developer, you should connect your data collector to collect emitted data points from Web Chat.
+        This template is a feature request form for suggesting new data points to be emitted in Web Chat. Web Chat do not collect any data. As a web developer, you should connect your data collector to collect emitted data points from Web Chat.
 
         ### Please read before submitting a feature request
 
