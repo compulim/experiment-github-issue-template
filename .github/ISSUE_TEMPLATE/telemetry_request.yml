@@ -17,6 +17,13 @@ body:
 
         This feature request is to make telemetry data more accessible and transparent to everyone.
   - type: textarea
+    id: sample-scenarios
+    attributes:
+      label: What do you want to understand with this new data points?
+      placeholder: This new data point will give us ability to measure "outgoing message reliability".
+    validations:
+      required: true
+  - type: textarea
     id: data-point
     attributes:
       label: What new data points do you want to add?
@@ -25,13 +32,6 @@ body:
           - Begin of send message
           - Send status turned from "sending" to "sent", with duration
           - Send status turned from "sending" to "send failed", with duration
-    validations:
-      required: true
-  - type: textarea
-    id: sample-scenarios
-    attributes:
-      label: How will this new data point help you to understand?
-      placeholder: This new data point will give us ability to measure "outgoing message reliability".
     validations:
       required: true
   - type: textarea
