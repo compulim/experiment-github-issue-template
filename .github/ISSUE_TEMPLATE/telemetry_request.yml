@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Please read
+        ## Please read
 
         Web Chat emit telemetry. However, we *do not collect them* and there is no default collector. It is up to web developers to connect their telemetry collection system to Web Chat and collect telemetry for their own use. We do not govern and do not know how these data are being used.
         
