@@ -8,9 +8,9 @@ body:
       label: Version
       description: Please verify your bug on latest version before submitting an issue.
       options:
-        - label: Latest production (@latest)
-        - label: Latest development (@main)
-        - label: Not latest
+        - Latest production (@latest)
+        - Latest development (@main)
+        - Not latest
     validations:
       required: true
   - type: dropdown
@@ -18,11 +18,11 @@ body:
       label: Module resolution
       multiple: true
       options:
-        - label: 'ESM: import { useMemoMap } from "use-memo-map"'
-        - label: 'ESM: import useMemoMap from "use-memo-map/useMemoMap"'
-        - label: 'CommonJS: require("use-memo-map")'
-        - label: 'CommonJS: require("use-memo-map/useMemoMap")'
-        - label: Others or unrelated
+        - 'ESM: import { useMemoMap } from "use-memo-map"'
+        - 'ESM: import useMemoMap from "use-memo-map/useMemoMap"'
+        - 'CommonJS: require("use-memo-map")'
+        - 'CommonJS: require("use-memo-map/useMemoMap")'
+        - Others or unrelated
     validations:
       required: true
   - type: dropdown
@@ -31,19 +31,21 @@ body:
       description: We support [Browserslist "defaults"](https://github.com/browserslist/browserslist#full-list) and Internet Explorer mode. Support of other environments are limited.
       multiple: true
       options:
-        - label: Modern browsers (browserlist "defaults")
-        - label: Internet Explorer mode
-        - label: Server-side rendering
-        - label: Others or unrelated
+        - Modern browsers (browserlist "defaults")
+        - Internet Explorer mode
+        - Server-side rendering
+        - Others or unrelated
   - type: textarea
     attributes:
       label: Test case
       description: |
         Please write a test case which fail the scenario and put comments in [BDD format (given/when/then)](https://www.thoughtworks.com/insights/blog/applying-bdd-acceptance-criteria-user-stories).
-        
-        Our support will be slow if a test case is not provided.
-        
-        Once we resolved the issue, your test case will become part of our test suite to protect from regressions.
+
+        *Our support will be slow if a test case is not provided.*
+
+        Once the issue is resolved, your test case will become part of [our test suite](../../tree/main/packages/integration-test/) to protect from regressions.
+
+        For your convenience, a simple test case is provided below. For advanced scenarios, please look at [our test suite](../../tree/main/packages/integration-test/).
       render: js
       value: |
         import { renderHook } from '@testing-library/react-hooks';
