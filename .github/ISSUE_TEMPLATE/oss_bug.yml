@@ -18,10 +18,10 @@ body:
       label: Module resolution
       multiple: true
       options:
-        - label: ESM: import { useMemoMap } from "use-memo-map"
-        - label: ESM: import useMemoMap from "use-memo-map/useMemoMap"
-        - label: CommonJS: require("use-memo-map")
-        - label: CommonJS: require("use-memo-map/useMemoMap")
+        - label: 'ESM: import { useMemoMap } from "use-memo-map"'
+        - label: 'ESM: import useMemoMap from "use-memo-map/useMemoMap"'
+        - label: 'CommonJS: require("use-memo-map")'
+        - label: 'CommonJS: require("use-memo-map/useMemoMap")'
         - label: Others or unrelated
     validations:
       required: true
