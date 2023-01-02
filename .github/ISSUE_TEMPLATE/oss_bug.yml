@@ -6,14 +6,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        We run this project out of our spare time and may not monitor this repository every day. Our support capacity is very limited and developers in professional capacity will receive prioritized support.
+        We run this project out of our spare time and may not monitor this repository every day. Our support capacity is very limited.
+
+        Developers in professional capacity will receive prioritized support.
   - type: dropdown
     attributes:
       label: Version
       description: |
         Please verify the issue on latest versions. Support on non-latest version is minimal and on a per case basis.
 
-        If you are using latest production, please verify against our latest development version as the issue could have resolved recently. To install latest development version, run `npm install use-memo-map@main`.
+        If you are using latest production, please verify against our latest development version as the issue could have been resolved recently. To install latest development version, run `npm install use-memo-map@main`.
 
       multiple: true
       options:
@@ -53,12 +55,12 @@ body:
     attributes:
       label: Environment
       description: |
-        We support [Browserslist "defaults"](https://github.com/browserslist/browserslist#full-list) and [Internet Explorer mode](https://learn.microsoft.com/en-us/deployedge/edge-ie-mode). Support of other environments are limited.
+        We support [Browserslist "defaults"](https://github.com/browserslist/browserslist#full-list) and [Internet Explorer mode](https://learn.microsoft.com/en-us/deployedge/edge-ie-mode). Support of other environments is minimal.
 
         When using in a sandboxed environment (e.g. SharePoint, Salesforce, etc.), please verify the issue outside of the sandbox. If the issue is related to the sandbox, please file it to your sandbox vendor.
       multiple: true
       options:
-        - Modern browsers (browserlist "defaults")
+        - "> 0.5%, last 2 versions, Firefox ESR, not dead"
         - Internet Explorer mode
         - Server-side rendering
         - Others or unrelated
@@ -68,7 +70,7 @@ body:
     attributes:
       label: Test case
       description: |
-        Please write a test case which fail the scenario with comments in [BDD format (given/when/then)](https://www.thoughtworks.com/insights/blog/applying-bdd-acceptance-criteria-user-stories).
+        Please write a minimal test case which fail the scenario with comments in [BDD format (given/when/then)](https://www.thoughtworks.com/insights/blog/applying-bdd-acceptance-criteria-user-stories).
 
         *Support will be slow or denied if a test case is not provided.*
 
@@ -92,6 +94,14 @@ body:
           // THEN: It should return [10, 20, 30].
           expect(result.current).toEqual([10, 20, 30]);
         });
+  - type: input
+    attributes:
+      label: Optional coding sandbox URL
+      description: |
+        If you have a minimal repro in a coding sandbox, please provide a URL here.
+
+        Please write your repro from scratch. We cannot work directly on your app source code.
+      placeholder: 'https://'
   - type: textarea
     attributes:
       label: Console errors
