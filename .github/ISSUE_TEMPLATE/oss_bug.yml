@@ -18,7 +18,9 @@ body:
       label: Module resolution
       multiple: true
       options:
-        - 'ESM: import { useMemoMap } from "use-memo-map"'
+        - |
+          ESM (default):
+          import { useMemoMap } from "use-memo-map"
         - 'ESM: import useMemoMap from "use-memo-map/useMemoMap"'
         - 'CommonJS: require("use-memo-map")'
         - 'CommonJS: require("use-memo-map/useMemoMap")'
