@@ -7,17 +7,14 @@ body:
     attributes:
       value: |
         We run this project out of our spare time and may not monitor this repository every day. Our support capacity is very limited and developers in professional capacity will receive prioritized support.
-
-        *Please redact or remove all confidential or personal information.*
   - type: dropdown
     attributes:
       label: Version
       description: |
-        Please verify the issue on latest versions. If you are using latest production, please verify against our latest development version as the issue could have resolved recently.
+        Please verify the issue on latest versions. Support on non-latest version is minimal and on a per case basis.
 
-        To install latest development version, run `npm install use-memo-map@main`.
+        If you are using latest production, please verify against our latest development version as the issue could have resolved recently. To install latest development version, run `npm install use-memo-map@main`.
 
-        Support on non-latest version is minimal and on a per case basis.
       multiple: true
       options:
         - Latest production (@latest)
@@ -33,8 +30,8 @@ body:
       options:
         - 'ESM: import { useMemoMap } from "use-memo-map"'
         - 'ESM: import useMemoMap from "use-memo-map/useMemoMap"'
-        - 'CJS: require("use-memo-map")'
-        - 'CJS: require("use-memo-map/useMemoMap")'
+        - 'CommonJS: require("use-memo-map")'
+        - 'CommonJS: require("use-memo-map/useMemoMap")'
         - Others or unrelated
     validations:
       required: true
@@ -44,10 +41,10 @@ body:
       description: For apps, please tell us what bundler is used to create your app bundle.
       multiple: true
       options:
-        - 'Webpack: Vanilla'
-        - 'Webpack: "create-react-app"'
-        - 'Webpack: Others'
+        - 'Webpack: Plain'
+        - 'Webpack: Complex'
         - ESBuild
+        - 'create-react-app'
         - Not an app
         - Others or unrelated
     validations:
@@ -56,7 +53,7 @@ body:
     attributes:
       label: Environment
       description: |
-        We support [Browserslist "defaults"](https://github.com/browserslist/browserslist#full-list) and Internet Explorer mode. Support of other environments are limited.
+        We support [Browserslist "defaults"](https://github.com/browserslist/browserslist#full-list) and [Internet Explorer mode](https://learn.microsoft.com/en-us/deployedge/edge-ie-mode). Support of other environments are limited.
 
         When using in a sandboxed environment (e.g. SharePoint, Salesforce, etc.), please verify the issue outside of the sandbox. If the issue is related to the sandbox, please file it to your sandbox vendor.
       multiple: true
@@ -71,9 +68,9 @@ body:
     attributes:
       label: Test case
       description: |
-        Please write a test case which fail the scenario and add comments in [BDD format (given/when/then)](https://www.thoughtworks.com/insights/blog/applying-bdd-acceptance-criteria-user-stories).
+        Please write a test case which fail the scenario with comments in [BDD format (given/when/then)](https://www.thoughtworks.com/insights/blog/applying-bdd-acceptance-criteria-user-stories).
 
-        *Our support will be slow if a test case is not provided.*
+        *Support will be slow or denied if a test case is not provided.*
 
         Once the issue is resolved, your test case will become part of [our test suite](../../tree/main/packages/integration-test/) to protect from regressions.
 
@@ -103,3 +100,4 @@ body:
   - type: textarea
     attributes:
       label: Additional context
+      description: If any of the answers above are "others or unrelated", please explain it here.
