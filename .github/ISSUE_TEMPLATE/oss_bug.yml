@@ -12,7 +12,11 @@ body:
   - type: dropdown
     attributes:
       label: Version
-      description: Please verify your bug on latest version before submitting an issue.
+      description: |
+        Please verify your bug on latest versions. If you are using latest production, please test our latest development as the issue could have resolved recently.
+
+        Support on non-latest version is minimal and on a per case basis.
+      multiple: true
       options:
         - Latest production (`@latest`)
         - Latest development (`@main`)
@@ -22,22 +26,25 @@ body:
   - type: dropdown
     attributes:
       label: Module resolution
+      description: Please describe how you import our package.
       multiple: true
       options:
         - 'ESM: import { useMemoMap } from "use-memo-map"'
         - 'ESM: import useMemoMap from "use-memo-map/useMemoMap"'
-        - 'CommonJS: require("use-memo-map")'
-        - 'CommonJS: require("use-memo-map/useMemoMap")'
+        - 'CJS: require("use-memo-map")'
+        - 'CJS: require("use-memo-map/useMemoMap")'
         - Others or unrelated
     validations:
       required: true
   - type: dropdown
     attributes:
       label: Bundler
+      description: Please
       multiple: true
       options:
-        - Webpack (vanilla)
-        - Webpack (create-react-app)
+        - 'Webpack: Vanilla'
+        - 'Webpack: create-react-app'
+        - 'Webpack: Others'
         - ESBuild
         - Others or unrelated
     validations:
